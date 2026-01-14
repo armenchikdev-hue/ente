@@ -17,7 +17,7 @@ RUN yarn build:accounts
 RUN yarn build:auth
 RUN yarn build:cast
 
-FROM nginx
+FROM nginx:1.29.4-trixie
 
 WORKDIR /out
 
